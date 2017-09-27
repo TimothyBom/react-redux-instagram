@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import moment from 'moment'
 import { isEmpty, map, find } from 'lodash'
 import { addNewComment, getCommentByPost, getDeleteComment } from '../../actions/comment'
 import { addNewVote, getVoteByPost, getDeleteVote } from '../../actions/vote'
