@@ -33,5 +33,5 @@ app.get('/*', (req, res) => {
 })
 
 app.listen(PORT, () => {
-    console.log('> Ready on http://127.0.0.1:3000')
+    console.log(`> Ready on http://127.0.0.1:${PORT}`)
 })
