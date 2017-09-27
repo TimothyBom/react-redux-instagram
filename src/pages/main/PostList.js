@@ -99,6 +99,8 @@ class PostList extends React.Component {
             </Link>
         )
 
+        const time = moment(post.created_at).fromNow()
+
         return (
             <article className="_s5vjd">
                 <header className="_7b8e">
@@ -131,7 +133,7 @@ class PostList extends React.Component {
                         </ul>
                     </div>
                     <div className="_ha6c6">
-                        <time className="_p29ma">2 September</time>
+                        <time className="_p29ma">{time}</time>
                     </div>
                     <section className="_km7ip _ti7l3">
                         <CommentForm post={post} currentUser={currentUser} addNewComment={addNewComment} />
